@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body, html {
+    background-color: cadetblue;
+}
+
+section {
+    width: 500px;
+    height: 350px;
+    margin: auto;
+    background-color: aliceblue;
+    border-radius: 3em;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.404);
+    background-color: aliceblue;
+}
+
+div {
+    margin: auto;
+    padding: 10px;
+}
+
+div#res {
+    text-align: center;
+    color: black;
+    font-size: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 4px 6px 5px rgba(0, 0, 0, 0.404);
+}
+
+p {
+    text-align: center;
+    color: black;
+    font-size: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

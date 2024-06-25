@@ -1,0 +1,29 @@
+Processo de Criação
+-----------------------------------------------
+01 - Criar um diretorio (dir)
+C:\TASI\Lab03_120324
+
+02 - Abrir o VSCode e vincular o dir criado;
+
+03 - Criar o arquivo de aplicação app.js;
+
+04 - Criar o cabeçalho;
+	// ******************************************************************* 
+	// UNICSUL - Universidade Cruzeiro do Sul - Santo Amaro         
+	// Analise e Desenvolvimento de Sistemas - Terceiro Semestre    
+	// Disciplina: Top. Avançados de SI - I                         
+	// Autor: Gustavo Silva Agapio - Data: 12/03/2024               
+	// Descrição:                           
+	// *******************************************************************
+05 - Programação:
+-Variáveis:
+	const port = 4500;
+-Importar os modulos;
+	const http = require('http');
+	const url = require('url');
+-Criar o Server;
+	
+-Importar o Server.
+	server.listen(port, () => {
+    	console.log(`[OK] Servidor iniciado com sucesso em http://localhost:${port} ...`);
+	})

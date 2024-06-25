@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 14</title>
+    <script src="arq.js" defer></script>
+    <style>
+        body {
+            background-color: rgba(0, 81, 255, 0.568);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+        }
+
+        header {
+            color: aliceblue;
+            text-align: center;
+        }
+
+        section {
+            background-color: aliceblue;
+            border-radius: 30px;
+            padding: 1em;
+            width: 500px;
+            margin: auto;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397);
+        }
+
+        select#flista {
+            width: 150px;
+        }
+
+        footer {
+            color: aliceblue;
+            font: normal 16pt Arial;
+            text-align: center;
+            font-style: italic;
+        }
+
+        div {
+            text-align: center;
+            font-size: 1em;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: black;
+            margin: auto;
+            padding: .5em;
+        }
+
+        h1 {
+            color: aliceblue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: auto;
+            text-align: center;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.479);
+        }
+
+        p{
+            text-align: center;
+            font-size: 1em;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: black;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Analisador de Números</h1>
+    </header> 
+
+    <section> 
+        <div>
+            <p>Digite qualquer número, quando quiser clique no botão para finalizar:</p>
+            <p><input type="number" name="numero" id="inumero"></p>
+            <p><input type="button" value="Adicionar" onclick="adicionar()"><br></p>
+        </div>
+        <div id="res">
+            Sua resposta irá aparecer aqui...
+        </div>
+        <p><input type="button" value="Finalizar" onclick="finalizar()"></p>
+    </section>
+    
+    <footer>
+        <p>&copy; Gustavo S Agapio</p>
+    </footer>
+</body>
+</html>

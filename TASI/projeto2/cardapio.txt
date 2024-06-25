@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardapio</title>
+    <style>
+        body {
+            text-align: left;
+            margin: 0 auto;
+            padding: 30px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        h1,
+        h2 {
+            text-align: left;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        h1 {
+            color: brown;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        button {
+            margin-top: 20px;
+        }
+
+        #total-pedido {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        #descricao-pedido {
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Pizzaria do Zé</h1>
+    <hr><br>
+    <h2>Monte Seu Pedido</h2>
+    <hr>
+
+    <h2>Sabor:</h2>
+    <p>Valores <strong>(Brotinho / Padrão / Grande)</strong>:</p>
+    <label for="">
+        <input type="radio" name="sabor" value="Margherita" data-sabor="Margherita">
+        Margherita (R$18.75 / R$25.00 / R$31.25)
+    </label>
+    <label for="">
+        <input type="radio" name="sabor" value="Peperone" data-sabor="Peperone">
+        Peperone (R$21.00 / R$28.00 / R$35.00)
+    </label>
+    <label for="">
+        <input type="radio" name="sabor" value="Frango com Catupiry" data-sabor="Frango com Catupiry">
+        Frango com Catupiry (R$22.50 / R$30.00 / R$37.50)
+    </label>
+    <label for="">
+        <input type="radio" name="sabor" value="Portuguesa" data-sabor="Portuguesa">
+        Portuguesa (R$24.00 / R$32.00 / R$40.00)
+    </label>
+    <label for="">
+        <input type="radio" name="sabor" value="Quatro queijos" data-sabor="Quatro queijos">
+        Quatro queijos (R$26.25 / R$35.00 / R$43.75)
+    </label>
+
+    <br>
+    <hr>
+    <h2>Tamanho:</h2>
+    <label for="">
+        <input type="radio" name="tamanho" value="Brotinho" data-tamanho="Brotinho">
+        Brotinho - 20cm / 4 Pedaços.
+    </label>
+    <label for="">
+        <input type="radio" name="tamanho" value="Padrão" data-tamanho="Padrão">
+        Padrão - 30cm / 8 Pedaços.
+    </label>
+    <label for="">
+        <input type="radio" name="tamanho" value="Grande" data-tamanho="Grande">
+        Grande - 40cm / 12 Pedaços.
+    </label>
+
+    <br>
+    <hr>
+    <h2>Borda:</h2>
+    <label for="">
+        <input type="radio" name="borda" id="sem-borda" value="Sem borda" data-borda="Sem borda">
+        Sem borda
+    </label>
+    <label for="">
+        <input type="radio" name="borda" id="borda-tradicional" value="Borda Tradicional"
+            data-borda="Borda Tradicional">
+        Borda Tradicional (Sem Recheio)
+    </label>
+    <label for="">
+        <input type="radio" name="borda" id="borda-catupiry" value="Borda Recheada com Catupiry"
+            data-borda="Borda Recheada com Catupiry">
+        Borda Recheada com Catupiry +R$2.00
+    </label>
+    <label for="">
+        <input type="radio" name="borda" id="borda-cheddar" value="Borda Recheada com Cheddar"
+            data-borda="Borda Recheada com Cheddar">
+        Borda Recheada com Cheddar +R$3.00
+    </label>
+
+    <br>
+    <hr>
+    <h2>Ingredientes Extras:</h2>
+    <label for="">
+        <input type="checkbox" name="extra-queijo" data-extra="extra-queijo">
+        extra-queijo +R$2.00
+    </label>
+    <label for="">
+        <input type="checkbox" name="extra-bacon" data-extra="extra-bacon">
+        extra-bacon +R$3.00
+    </label>
+    <label for="">
+        <input type="checkbox" name="extra-cheddar" data-extra="extra-cheddar">
+        extra-cheddar +R$4.00
+    </label>
+    <label for="">
+        <input type="checkbox" name="extra-pepperoni" data-extra="extra-pepperoni">
+        extra-pepperoni +R$5.00
+    </label>
+
+    <br>
+    <hr>
+    <h2>Opcionais - Preparação:</h2>
+    <label for="">
+        <input type="checkbox" name="opcionais-oregano" data-extra="opcionais-oregano">
+        Oregano
+    </label>
+    <label for="">
+        <input type="checkbox" name="opcionais-azeitona" data-extra="opcionais-azeitona">
+        Azeitona
+    </label>
+    <label for="">
+        <input type="checkbox" name="opcionais-azeite" data-extra="opcionais-azeite">
+        Azeite
+    </label>
+    <label for="">
+        <input type="checkbox" name="opcionais-pimenta" data-extra="opcionais-pimenta">
+        Pimenta
+    </label>
+    <label for="">
+        <input type="checkbox" name="opcionais-tomate" data-extra="opcionais-tomate">
+        Tomate
+    </label>
+
+    <button>Montar Pizza</button>
+    <hr><br>
+
+    <h2>Total do Pedido:</h2>
+    <p id="total-pedido">R$00.00</p>
+    <hr><br>
+
+    <h2>Descrição do Pedido:</h2>
+    <p id="descricao-pedido">-----------</p>
+
+    <script src="appPizzaria.js"></script>
+
+</body>
+
+</html>

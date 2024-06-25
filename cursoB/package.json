@@ -1,0 +1,15 @@
+{
+  "name": "cursob",
+  "version": "1.0.0",
+  "main": "arq01.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "keywords": [],
+  "author": "Gustavo Silva Agapio",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}

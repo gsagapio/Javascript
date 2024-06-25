@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js 04</title>
+    <style>    
+        body {
+            background-color: rgba(187, 126, 34, 0.61);
+            color: aliceblue;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando prompts numbers em JavaScript</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repellat accusantium, voluptates sequi corporis provident voluptatem aliquid, nostrum suscipit eos molestiae ut consectetur delectus impedit cumque ipsa officiis porro cum.</p>
+    <script>
+        //comando para perguntar algo ao usuário
+        var num1= Number.parseInt(window.prompt('Digite um número inteiro: '));
+        var num2 = Number.parseInt(window.prompt('Digite outro número inteiro: '));
+        var soma = num1 + num2
+        window.alert(`A soma entre o ${num1} e o ${num2} é igual a: ${soma}`)
+
+        var num3= Number.parseFloat(window.prompt('Digite um número quebrado: '));
+        var num4 = Number.parseFloat(window.prompt('Digite outro número quebrado: '));
+        var soma = num3 + num4
+        window.alert(`A soma entre o ${num3} e o ${num4} é igual a: ${soma}`)
+
+        var num5= Number(window.prompt('Digite um número: '));
+        var num6 = Number(window.prompt('Digite outro número: '));
+        var soma = num5 + num6
+        window.alert('A soma entre os valores é: ' + soma)
+    </script>
+</body>
+</html>

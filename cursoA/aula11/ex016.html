@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Identificando Nacionalidade</h1>
+    Em qual país você nasceu? <input type="text" name="txtnasc" id="txtnasc">
+    <input type="button" value="Verificar" onclick="nacional()">
+    <div id="res"></div>
+
+    <script>
+        function nacional(){
+            let pais = window.document.getElementById('txtnasc').value.toLowerCase();
+            let resp = window.document.getElementById('res');
+
+            if (pais === 'brasil'){
+                resp.innerHTML = `<p>Parabéns camarada! Você é <strong>Brasileiro</strong>, nasceu no ${pais}, tamo junto!</p>`;
+            } else{
+                resp.innerHTML = `<p>Você é <strong>ESTRANGEIRO</strong>, nasceu em ${pais}, melhore.</p>`;
+            }
+        }
+    </script>       
+</body>
+</html>
